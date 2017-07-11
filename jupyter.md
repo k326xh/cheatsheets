@@ -12,3 +12,10 @@ python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
 source activate other-env
 python -m ipykernel install --user --name other-env --display-name "Python (other-env)"
 ```
+
+## Turn off known warnings in one cell
+Codes need to be indented as the warnings.simplefilter() line
+```
+with warnings.catch_warnings():
+    warnings.simplefilter("ignore")
+```
