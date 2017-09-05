@@ -2,12 +2,13 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
-## If you're prompted for a password with the ucsd-train account
+## Using Singularity on mac
 
-Then the ssh key needs to be added again.
+Need the help from vagrant
 
 ```
-ssh-add ~/.ssh/biom_262.pri
+vagrant ssh
+source .scbatchrc
 ```
 
 
