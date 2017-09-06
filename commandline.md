@@ -10,6 +10,15 @@ echo -e 'Hello\tWorld'
 ```
 Hello World
 
+2. Loop through numbers
+
+```
+for i in `seq 0.1 0.2 0.5`; do echo $i; done
+```
+0.1
+0.3
+0.5
+
 ## Using Singularity on mac
 
 Need the help from vagrant
@@ -18,7 +27,7 @@ Need the help from vagrant
 vagrant ssh
 source .scbatchrc
 ```
-
+To get out of vagrant, do CTRL + D. Or try ```logout``` (this works sometimes but not always)
 
 ## Text maninpulation
 
