@@ -16,7 +16,9 @@ Hello World
 for i in `seq 0.1 0.2 0.5`; do echo $i; done
 ```
 0.1
+
 0.3
+
 0.5
 
 ## Using Singularity on mac
