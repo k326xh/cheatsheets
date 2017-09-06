@@ -2,6 +2,14 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
+## Echo echo
+1. Include tab in echo
+
+```
+echo -e 'Hello\tWorld'
+```
+Hello World
+
 ## Using Singularity on mac
 
 Need the help from vagrant
