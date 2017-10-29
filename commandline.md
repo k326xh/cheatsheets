@@ -21,6 +21,17 @@ for i in `seq 0.1 0.2 0.5`; do echo $i; done
 
 0.5
 
+## Sums and means
+1. Row sums
+```
+awk '{c=0;for(i=1;i<=NF;++i){c+=$i};print c}' <file>
+```
+2. Column sums
+```
+awk '{for (i=1;i<=NF;i++) sum[i]+=$i;}; END{for (i in sum) print sum[i]}'
+```
+* Add NR>1, and initialize i to 2, if there are header and row names.
+
 ## Using Singularity on mac
 
 Need the help from vagrant
