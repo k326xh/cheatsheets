@@ -10,7 +10,9 @@ echo -e 'Hello\tWorld'
 ```
 Hello World
 
-2. Loop through numbers
+## Loop around
+
+1. Loop through numbers
 
 ```
 for i in `seq 0.1 0.2 0.5`; do echo $i; done
@@ -20,6 +22,21 @@ for i in `seq 0.1 0.2 0.5`; do echo $i; done
 0.3
 
 0.5
+
+2. Loop through file names with space inside?
+```
+#!/bin/bash
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+# set me
+FILES=/data/*
+for f in $FILES
+do
+  echo "$f"
+done
+# restore $IFS
+IFS=$SAVEIFS
+```
 
 ## Sums and means
 1. Row sums
