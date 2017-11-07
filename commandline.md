@@ -2,6 +2,18 @@
 
 This is a cheat sheet for "Bourne-again shell" (bash) and GNU/Linux commands.
 
+## About .bashrc
+1. After any changes made to the file
+```
+source ~/.bashrc
+```
+
+2. Checking all server occupancy (while logged in one of the servers)
+Include this in the .bashrc file
+```
+alias whatsBeingUsed="ssh 10.20.127.4 'curl -sS localhost:3000/serverStats'"
+```
+
 ## Echo echo
 1. Include tab in echo
 
