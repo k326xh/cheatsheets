@@ -169,3 +169,9 @@ Appending a file to something on a server, e.g. to send your ssh public key onto
 ```
 cat .ssh/id_dsa.pub | ssh obotvinnik@tscc.sdsc.edu 'cat >> ~/.ssh/authorized_keys'
 ```
+
+## Download from URL
+Showing example of downloading UMI-tools.py raw file
+```
+curl -0 https://raw.githubusercontent.com/CGATOxford/UMI-tools/master/umi_tools/umi_tools.py
+```
