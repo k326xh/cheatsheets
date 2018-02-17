@@ -22,6 +22,14 @@ echo -e 'Hello\tWorld'
 ```
 Hello World
 
+2. No newline
+
+```
+echo -n 'sth'
+```
+```
+for i in `ls *.fc`; do echo -ne ${i}'\t'; awk '{sum += $7;} END {print sum;}' $i; done
+```
 ## Loop around
 
 1. Loop through numbers
