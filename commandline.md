@@ -86,6 +86,11 @@ To get out of vagrant, do CTRL + D. Or try ```logout``` (this works sometimes bu
 ```
 tail -n +2 filename.txt
 ```
+### Take multiple delimiters as one
+```
+awk -F" +" '{print $5}' file
+
+```
 
 ## Compressing and decompressing files
 
